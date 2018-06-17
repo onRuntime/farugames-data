@@ -10,9 +10,9 @@ Ce projet est privé, nous nous engageons à lancer des pousuites judiciaires pour
 
 - Nom : FaruGamesData
 - Type : Infrastructure
-- Ã‰tat : Progression continuelle
+- État : Progression continuelle
 - Développeur(s) : 3DX900
 
 ## Description
-FaruGamesData est le projet contenant le transfert de donnÃ©es utilisÃ©e sur les serveurs de jeu.
+FaruGamesData est le projet contenant le transfert de données utilisées sur les serveurs de jeu.
 >>>>>>> branch 'master' of https://gitlab.com/FaruGamesDev/FaruGamesData.git
