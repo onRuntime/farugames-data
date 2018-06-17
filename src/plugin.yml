@@ -1,0 +1,7 @@
+main: net.faru.data.spigot.SpigotFaruData
+
+author: 3DX900
+version: 1.0
+name: FaruData
+
+depends: [ FaruAPI ]

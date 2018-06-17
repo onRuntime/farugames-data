@@ -1,0 +1,6 @@
+net\faru\data\database\player\IPermission.class
+net\faru\data\spigot\SpigotFaruData.class
+net\faru\data\database\rank\IRank.class
+net\faru\data\mysql\MySQLManager.class
+net\faru\data\bungee\BungeeFaruData.class
+net\faru\data\database\currency\ICurrency.class
