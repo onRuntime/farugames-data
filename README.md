@@ -8,7 +8,7 @@ Ce projet est privé, nous nous engageons à lancer des pousuites judiciaires po
 
 - Nom : FaruGamesData
 - Type : Infrastructure
-- État : Progression continuelle 
+- État : Progression continuelle
 - Développeur(s) : 3DX900
 
 ## Description
