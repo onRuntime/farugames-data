@@ -39,15 +39,15 @@ public class IData {
 								+ " last_login," /* 4 */
 								+ " last_ip," /* 5 */
 								+ " language," /* 6 */
-								+ " afk_status," /* 7 */
-								+ " allow_messages," /* 8 */
+								+ " afk_statut," /* 7 */
+								+ " allow_private_messages," /* 8 */
 								+ " allow_party," /* 9 */
 								+ " allow_party_follow," /* 10 */
 								+ " allow_friend," /* 11 */
 								+ " allow_guilds," /* 12 */
 								+ " allow_chat," /* 13 */
-								+ " allow_show_players," /* 14 */
-								+ " allow_lobby_command_protection," /* 15 */
+								+ " allow_player_visibility," /* 14 */
+								+ " allow_lobby_double_process_command," /* 15 */
 								+ " allow_chat_mention" /* 16 */
 								+ ") VALUES ("
 								+ " ?,"
@@ -85,7 +85,7 @@ public class IData {
 			}
 		} catch (SQLException e) {
 			System.out.print("");
-			System.out.print("[IRank] Connexion à la base de données par la table " + table + " impossible : ");
+			System.out.print("[IData] Connexion à la base de données par la table " + table + " impossible : ");
 			e.printStackTrace();
 			System.out.print("");
 		}
