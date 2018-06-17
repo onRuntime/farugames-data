@@ -11,6 +11,7 @@ import java.util.UUID;
 import org.bukkit.craftbukkit.v1_9_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
+import net.faru.api.player.data.DataType;
 import net.faru.api.player.languages.Languages;
 import net.faru.data.mysql.MySQLManager;
 
@@ -89,5 +90,45 @@ public class IData {
 			e.printStackTrace();
 			System.out.print("");
 		}
+	}
+	
+	public static void setData(UUID uuid, DataType dataType, Object value) {
+		try {
+			final Connection connection = MySQLManager.getConnection();
+			PreparedStatement preparedStatement = connection
+					.prepareStatement("UPDATE " + table + " SET " + dataType.getColumn() + " = ? WHERE player_uuid = ?");
+			preparedStatement.setObject(1, value);
+			preparedStatement.setString(2, uuid.toString());
+			preparedStatement.executeUpdate();
+			preparedStatement.close();
+		} catch (SQLException e) {
+			System.out.print("");
+			System.out.print("[IData] Connexion à la base de données par la table " + table + " impossible : ");
+			e.printStackTrace();
+			System.out.print("");
+		}
+	}
+	
+	public static Object getData(UUID uuid, DataType dataType) {
+		Object value = null;
+		try {
+			final Connection connection = MySQLManager.getConnection();
+			PreparedStatement preparedStatement = connection
+					.prepareStatement("SELECT " + dataType.getColumn() + " FROM " + table + " WHERE player_uuid = ?");
+			preparedStatement.setString(1, uuid.toString());
+			ResultSet rs = preparedStatement.executeQuery();
+			if (!rs.next()) {
+				connection.close();
+				return value;
+			}
+			value = rs.getObject(dataType.getColumn());
+			preparedStatement.close();
+		} catch (SQLException e) {
+			System.out.print("");
+			System.out.print("[IData] Connexion à la base de données par la table " + table + " impossible : ");
+			e.printStackTrace();
+			System.out.print("");
+		}
+		return value;
 	}
 }
