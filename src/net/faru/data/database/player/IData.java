@@ -72,7 +72,7 @@ public class IData {
 				preparedStatement.setString(3, new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
 				preparedStatement.setString(4, ((CraftPlayer) player).getAddress().getHostString());
 				preparedStatement.setString(5, ((CraftPlayer) player).getAddress().getHostString());
-				preparedStatement.setString(6, Languages.ENGLISH.getFile());
+				preparedStatement.setString(6, Languages.FRENCH.getFile());
 				preparedStatement.setBoolean(7, false);
 				preparedStatement.setBoolean(8, true);
 				preparedStatement.setBoolean(9, true);
