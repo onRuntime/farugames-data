@@ -1,4 +1,4 @@
-package net.farugames.data.database.servers;
+package net.faru.data.database.servers;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.List;
 import net.faru.api.servers.FaruServerAPI;
 import net.faru.api.servers.ServerType;
 import net.faru.api.spigot.SpigotFaruAPI;
-import net.farugames.data.mysql.MySQLManager;
+import net.faru.data.mysql.MySQLManager;
 
 public class IServer {
 

@@ -1,4 +1,4 @@
-package net.farugames.data.mysql;
+package net.faru.data.mysql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

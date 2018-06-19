@@ -1,4 +1,4 @@
-package net.farugames.data.bungee;
+package net.faru.data.bungee;
 
 import net.md_5.bungee.api.plugin.Plugin;
 
