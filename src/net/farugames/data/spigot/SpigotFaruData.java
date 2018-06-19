@@ -1,4 +1,4 @@
-package net.faru.data.spigot;
+package net.farugames.data.spigot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.UUID;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import net.faru.api.player.FaruPlayer;
-import net.faru.data.mysql.MySQLManager;
+import net.farugames.data.mysql.MySQLManager;
 
 public class SpigotFaruData extends JavaPlugin {
 

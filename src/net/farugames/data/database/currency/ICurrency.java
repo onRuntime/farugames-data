@@ -1,4 +1,4 @@
-package net.faru.data.database.currency;
+package net.farugames.data.database.currency;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.UUID;
 
 import net.faru.api.player.currency.Currency;
-import net.faru.data.mysql.MySQLManager;
+import net.farugames.data.mysql.MySQLManager;
 
 public class ICurrency {
 

@@ -1,4 +1,4 @@
-package net.faru.data.database.player;
+package net.farugames.data.database.player;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import net.faru.data.mysql.MySQLManager;
+import net.farugames.data.mysql.MySQLManager;
 
 public class IPermission {
 

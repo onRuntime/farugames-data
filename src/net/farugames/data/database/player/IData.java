@@ -1,4 +1,4 @@
-package net.faru.data.database.player;
+package net.farugames.data.database.player;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 
 import net.faru.api.player.data.DataType;
 import net.faru.api.player.languages.Languages;
-import net.faru.data.mysql.MySQLManager;
+import net.farugames.data.mysql.MySQLManager;
 
 public class IData {
 
