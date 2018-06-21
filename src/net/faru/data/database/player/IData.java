@@ -12,7 +12,7 @@ import org.bukkit.craftbukkit.v1_9_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import net.faru.api.player.data.DataType;
-import net.faru.api.player.languages.Languages;
+import net.faru.api.player.languages.Lang;
 import net.faru.data.mysql.MySQLManager;
 
 public class IData {
@@ -72,7 +72,7 @@ public class IData {
 				preparedStatement.setString(3, new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
 				preparedStatement.setString(4, ((CraftPlayer) player).getAddress().getHostString());
 				preparedStatement.setString(5, ((CraftPlayer) player).getAddress().getHostString());
-				preparedStatement.setString(6, Languages.FRENCH.getFile());
+				preparedStatement.setString(6, Lang.ENGLISH.in(Lang.ENGLISH));
 				preparedStatement.setBoolean(7, false);
 				preparedStatement.setBoolean(8, true);
 				preparedStatement.setBoolean(9, true);
