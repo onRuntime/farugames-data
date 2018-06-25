@@ -12,7 +12,7 @@ import net.faru.data.mysql.MySQLManager;
 
 public class IPermission {
 
-	private static String table = "rank";
+	private static String table = "permission";
 	
 	public static String getTable() {
 		return table;

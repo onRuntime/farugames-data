@@ -10,11 +10,6 @@ import net.faru.api.player.FaruPlayer;
 import net.faru.data.mysql.MySQLManager;
 
 public class SpigotFaruData extends JavaPlugin {
-
-	protected String sqlUrl;
-	protected String sqlBase;
-	protected String sqlUser;
-	protected String sqlPass;
 	
 	public static Map<UUID, FaruPlayer> iFaruPlayer = new HashMap<UUID, FaruPlayer>();
 	
@@ -22,7 +17,7 @@ public class SpigotFaruData extends JavaPlugin {
 	
 	public void onLoad() {
 		instance = this;
-		new MySQLManager(sqlBase, "3306", sqlUrl, sqlUser, sqlPass).connection();
+		new MySQLManager("localhost", "3306", "farugames", "root", "b4z5MT4Nk6hA").connection();
 		
 		this.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 		super.onLoad();

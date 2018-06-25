@@ -19,7 +19,8 @@ public class IMaintenance {
 		try {
 			final Connection connection = MySQLManager.getConnection();
 			PreparedStatement preparedStatement = connection
-					.prepareStatement("INSERT INTO " + table + " (state) VALUES (" + maintenance + ")");
+					.prepareStatement("UPDATE " + table + " SET state = ? WHERE 1");
+			preparedStatement.setBoolean(1, maintenance);
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
 		} catch (SQLException e) {

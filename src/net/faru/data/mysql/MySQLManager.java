@@ -25,14 +25,12 @@ public class MySQLManager {
 	public void connection() {
 		if (!isConnected()) {
 			try {
-				this.connection = DriverManager.getConnection(this.urlBase + this.host + "/" + this.database + "?autoReconnect=true",
+				this.connection = DriverManager.getConnection("jdbc:mysql://" + this.urlBase + ":" + this.host + "/" + this.database + "?autoReconnect=true",
 						this.username, this.password);
 				return;
 			} catch (SQLException e) {
-				System.out.println("");
-				System.out.println("[MySQLManager] Connexion à la base de données MySQL impossible :");
+				System.out.println("[MySQLManager] Error trying to connect to database :");
 				e.printStackTrace();
-				System.out.println("");
 				return;
 			}
 		}
@@ -45,10 +43,8 @@ public class MySQLManager {
 				this.connection.close();
 				return;
 			} catch (SQLException e) {
-				System.out.println("");
-				System.out.println("[MySQLManager] Déconnexion de la base de données MySQL impossible :");
+				System.out.println("[MySQLManager] Error trying to disconnect from database :");
 				e.printStackTrace();
-				System.out.println("");
 				return;
 			}
 		}
@@ -62,10 +58,8 @@ public class MySQLManager {
 			}
 			return true;
 		} catch (SQLException e) {
-			System.out.println("");
-			System.out.println("[MySQLManager] Détection de la connexion impossible :");
+			System.out.println("[MySQLManager] Error trying detect connection with database :");
 			e.printStackTrace();
-			System.out.println("");
 		}
 		return false;
 	}

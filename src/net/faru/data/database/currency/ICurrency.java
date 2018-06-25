@@ -27,9 +27,10 @@ private static String table = "currency";
 			if (!rs.next()) {
 				preparedStatement.close();
 				preparedStatement = connection.prepareStatement("INSERT INTO " + table
-						+ " (player_uuid, money_coins) VALUES (?, ?, ?)");
+						+ " (player_uuid, money_coins, money_credits) VALUES (?, ?, ?)");
 				preparedStatement.setString(1, uuid.toString());
 				preparedStatement.setInt(2, Currency.COINS.getDefaultValue());
+				preparedStatement.setInt(2, Currency.CREDITS.getDefaultValue());
 				preparedStatement.executeUpdate();
 				preparedStatement.close();
 			}
