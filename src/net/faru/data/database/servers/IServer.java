@@ -46,8 +46,8 @@ public class IServer {
 						.prepareStatement("UPDATE " + table + " SET mode = ?, statut = ?, onlineplayers = ?, onlineplayersname = ? WHERE name = ?");
 				preparedStatement.setString(1, server.getMode().toString());
 				preparedStatement.setString(2, server.getStatut().toString());
-				preparedStatement.setInt(3, server.getOnlinePlayers().size());
-				preparedStatement.setString(4, server.getOnlinePlayers().toString());
+				preparedStatement.setInt(3, server.getOnlinePlayers());
+				preparedStatement.setString(4, server.getPlayers() != null ? server.getPlayers().toString() : "NULL");
 				preparedStatement.setString(5, server.getName());
 				preparedStatement.executeUpdate();
 			}

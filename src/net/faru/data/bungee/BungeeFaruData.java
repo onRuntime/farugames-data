@@ -16,7 +16,7 @@ public class BungeeFaruData extends Plugin {
 	
 	public void onLoad() {
 		instance = this;
-		new MySQLManager("localhost", "3306", "farugames", "root", "b4z5MT4Nk6hA").connection();
+		new MySQLManager("149.202.102.63", "3306", "farugames", "proxy", "HCK2u7a8Up4d").connection();
 		
 		super.onLoad();
 	}
