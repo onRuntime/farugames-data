@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
 
-import net.faru.api.player.rank.Rank;
+import net.faru.api.spigot.player.rank.Rank;
 import net.faru.data.mysql.MySQLManager;
 
 public class IRank {

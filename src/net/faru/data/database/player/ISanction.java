@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 
-import net.faru.api.sanctions.Sanction;
+import net.faru.api.bungee.sanctions.Sanction;
 import net.faru.data.mysql.MySQLManager;
 
 public class ISanction {

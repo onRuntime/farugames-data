@@ -8,8 +8,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
-import net.faru.api.player.data.DataType;
-import net.faru.api.player.languages.Lang;
+import net.faru.api.spigot.player.data.DataType;
+import net.faru.api.spigot.player.languages.Lang;
 import net.faru.data.mysql.MySQLManager;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 

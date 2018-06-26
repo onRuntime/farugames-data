@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
 
-import net.faru.api.player.currency.Currency;
+import net.faru.api.spigot.player.currency.Currency;
 import net.faru.data.mysql.MySQLManager;
 
 public class ICurrency {
@@ -30,7 +30,7 @@ private static String table = "currency";
 						+ " (player_uuid, money_coins, money_credits) VALUES (?, ?, ?)");
 				preparedStatement.setString(1, uuid.toString());
 				preparedStatement.setInt(2, Currency.COINS.getDefaultValue());
-				preparedStatement.setInt(2, Currency.CREDITS.getDefaultValue());
+				preparedStatement.setInt(3, Currency.CREDITS.getDefaultValue());
 				preparedStatement.executeUpdate();
 				preparedStatement.close();
 			}
@@ -90,7 +90,6 @@ private static String table = "currency";
 			preparedStatement.setString(1, uuid.toString());
 			ResultSet rs = preparedStatement.executeQuery();
 			if (!rs.next()) {
-				connection.close();
 				return Integer.valueOf(coins);
 			}
 			coins = rs.getInt(currency.getColumn());

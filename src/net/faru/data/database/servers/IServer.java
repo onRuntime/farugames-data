@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import net.faru.api.servers.FaruServerAPI;
-import net.faru.api.servers.ServerStatut;
+import net.faru.api.bungee.servers.FaruServerAPI;
+import net.faru.api.bungee.servers.ServerStatut;
 import net.faru.data.mysql.MySQLManager;
 
 public class IServer {

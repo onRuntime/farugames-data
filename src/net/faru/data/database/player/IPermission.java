@@ -22,7 +22,7 @@ public class IPermission {
 		try {
 			final Connection connection = MySQLManager.getConnection();
 			PreparedStatement preparedStatement = (PreparedStatement) connection
-					.prepareStatement("SELECT uuid FROM " + table + " WHERE uuid = ?");
+					.prepareStatement("SELECT player_uuid FROM " + table + " WHERE player_uuid = ?");
 			preparedStatement.setString(1, uuid.toString());
 			ResultSet rs = preparedStatement.executeQuery();
 			if(!rs.next()) {
@@ -47,7 +47,7 @@ public class IPermission {
 		try {
 			final Connection connection = MySQLManager.getConnection();
 			PreparedStatement preparedStatement = (PreparedStatement) connection
-					.prepareStatement("SELECT uuid FROM " + table + " WHERE uuid = ?");
+					.prepareStatement("SELECT player_uuid FROM " + table + " WHERE player_uuid = ?");
 			preparedStatement.setString(1, uuid.toString());
 			ResultSet rs = preparedStatement.executeQuery();
 			if(!rs.next()) {
@@ -72,7 +72,7 @@ public class IPermission {
 		try {
 			final Connection connection = MySQLManager.getConnection();
 			PreparedStatement preparedStatement = (PreparedStatement) connection
-					.prepareStatement("SELECT uuid FROM " + table + " WHERE uuid = ?");
+					.prepareStatement("SELECT player_uuid FROM " + table + " WHERE player_uuid = ?");
 			preparedStatement.setString(1, uuid.toString());
 			ResultSet rs = preparedStatement.executeQuery();
 			if(!rs.next()) {
@@ -98,7 +98,7 @@ public class IPermission {
 		try {
 			final Connection connection = MySQLManager.getConnection();
 			PreparedStatement preparedStatement = (PreparedStatement) connection
-					.prepareStatement("SELECT permissions FROM " + table + " WHERE uuid = ?");
+					.prepareStatement("SELECT permissions FROM " + table + " WHERE player_uuid = ?");
 			preparedStatement.setString(1, uuid.toString());
 			ResultSet rs = preparedStatement.executeQuery();
 			if(rs.next()) {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import net.faru.api.bungee.player.FaruBungeePlayer;
+import net.faru.api.bungee.proxiedplayer.FaruBungeePlayer;
 import net.faru.data.mysql.MySQLManager;
 import net.md_5.bungee.api.plugin.Plugin;
 
