@@ -1,5 +1,5 @@
-main: net.faru.data.bungee.BungeeFaruData
+main: net.farugames.data.bungee.Main
 
-author: 3DX900
-version: 1.0
-name: FaruData
+authors: [3DX900, ChocoIG]
+version: 0.0.1
+name: FaruGamesData

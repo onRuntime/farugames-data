@@ -1,7 +1,7 @@
-main: net.faru.data.spigot.SpigotFaruData
+main: net.farugames.data.spigot.Main
 
-author: 3DX900
-version: 1.0
-name: FaruData
+authors: [3DX900, ChocoIG]
+version: 0.0.1
+name: FaruGamesData
 
-depends: [ FaruAPI ]
+depends: [ FaruGamesAPI ]

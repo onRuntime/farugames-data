@@ -1,11 +1,11 @@
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\player\IExperience.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\spigot\SpigotFaruData.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\currency\ICurrency.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\servers\IMaintenance.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\mysql\MySQLManager.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\player\ISanction.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\servers\IServer.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\bungee\BungeeFaruData.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\player\IData.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\player\IPermission.java
-C:\Users\Jérém ~ 3DX900\git\FaruGamesData\src\net\faru\data\database\rank\IRank.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\spigot\Main.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\player\ISanction.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\rank\IRank.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\bungee\Main.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\player\IPermission.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\servers\IServer.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\currency\ICurrency.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\player\IExperience.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\player\IData.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\database\servers\IMaintenance.java
+C:\Users\Antoine Gaming\git\FaruGamesData\src\net\farugames\data\mysql\MySQLManager.java
