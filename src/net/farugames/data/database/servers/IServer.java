@@ -128,6 +128,23 @@ public class IServer {
 		}
 	}
 	
+	public static Boolean exists(String name) {
+		Boolean exists = false;
+		try {
+			final Connection connection = MySQLManager.getConnection();
+			PreparedStatement preparedStatement = (PreparedStatement) connection
+					.prepareStatement("SELECT name FROM " + table + " WHERE name = ?");
+			preparedStatement.setString(1, name);
+			ResultSet rs = preparedStatement.executeQuery();
+			if(rs.next()) exists = true;
+			preparedStatement.close();
+		} catch (SQLException e) {
+			System.err.print("[IServer] Error trying to connect to database : ");
+			e.printStackTrace();
+		}
+		return exists;
+	}
+	
 	public static List<FaruServerAPI> getServers() {
 		List<FaruServerAPI> list = new ArrayList<FaruServerAPI>();
 		try {
@@ -145,20 +162,21 @@ public class IServer {
 		return list;
 	}
 	
-	public static Boolean exists(String name) {
-		Boolean exists = false;
+	public static int getGlobalOnlinePlayers() {
+		int result = 0;
 		try {
 			final Connection connection = MySQLManager.getConnection();
-			PreparedStatement preparedStatement = (PreparedStatement) connection
-					.prepareStatement("SELECT name FROM " + table + " WHERE name = ?");
-			preparedStatement.setString(1, name);
+			PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement("SELECT SUM(onlineplayers) AS total FROM " + table);
+
 			ResultSet rs = preparedStatement.executeQuery();
-			if(rs.next()) exists = true;
+			if (!rs.next()) {
+				return Integer.valueOf(result).intValue();
+			}
+			result = rs.getInt("total");
 			preparedStatement.close();
 		} catch (SQLException e) {
-			System.err.print("[IServer] Error trying to connect to database : ");
 			e.printStackTrace();
 		}
-		return exists;
+		return Integer.valueOf(result).intValue();
 	}
 }
