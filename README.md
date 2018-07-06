@@ -1,18 +1,16 @@
 <img src="https://i.goopics.net/x8mAQ.png" alt="test" width="100" height="100" />
 
-FaruGamesData est le projet contenant le stockage des données utilisée sur les serveurs de jeu et par les joueurs.
-=======
-## FaruGames - FaruGamesData
+## FaruGames - FaruGamesAPI
 
-Ce projet est privé, nous nous engageons à lancer des pousuites judiciaires pour les personnes copiant celui-ci sans autorisations des propriétaires de [**farugames.net**](http://farugames.net).
+Ce projet est privÃ©, nous nous engageons Ã  lancer des pousuites judiciaires pour les personnes copiant celui-ci sans autorisations des propriÃ©taires de [**farugames.net**](http://farugames.net).
 
 ------------------------------------
 
 - Nom : FaruGamesData
 - Type : Infrastructure
-- État : Progression continuelle
-- Développeur(s) : 3DX900
+- Ã‰tat : Progression continuelle
+- DÃ©veloppeur(s) : 3DX900, ChocoIG
 
 ## Description
-FaruGamesData est le projet contenant le transfert de données utilisées sur les serveurs de jeu.
+FaruGamesData est le projet contenant le stockage des donnÃ©es utilisÃ©es sur les serveurs de jeu et par les joueurs.
 >>>>>>> branch 'master' of https://gitlab.com/FaruGamesDev/FaruGamesData.git
