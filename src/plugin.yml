@@ -1,7 +1,5 @@
 main: net.farugames.data.spigot.Main
-
-authors: [3DX900, ChocoIG]
-version: 0.0.2
 name: FaruGamesData
-
-depends: [ FaruGamesAPI ]
+version: 0.1.b1-SNAPSHOT
+authors: [3DX900, ChocoIG, SweetKebab_]
+depends: [FaruGamesAPI]

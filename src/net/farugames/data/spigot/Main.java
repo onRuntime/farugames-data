@@ -1,19 +1,12 @@
 package net.farugames.data.spigot;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 
-import net.farugames.api.spigot.player.FaruPlayer;
 import net.farugames.data.mysql.MySQLManager;
 
 public class Main extends JavaPlugin implements PluginMessageListener {
-	
-	public static Map<UUID, FaruPlayer> iFaruPlayer = new HashMap<UUID, FaruPlayer>();
 	
 	private static Main instance;
 	

@@ -1,18 +1,11 @@
 package net.farugames.data.bungee;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
-import net.farugames.api.bungee.proxiedplayer.FaruBungeePlayer;
 import net.farugames.data.mysql.MySQLManager;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public class Main extends Plugin {
 
 	private static Main instance;
-	
-	public static Map<UUID, FaruBungeePlayer> iFaruPlayer = new HashMap<UUID, FaruBungeePlayer>();
 	
 	public void onLoad() {
 		instance = this;

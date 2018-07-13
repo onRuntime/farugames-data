@@ -1,5 +1,4 @@
 main: net.farugames.data.bungee.Main
-
-authors: [3DX900, ChocoIG]
-version: 0.0.1
 name: FaruGamesData
+version: 0.1.b1-SNAPSHOT
+authors: [3DX900, ChocoIG, SweetKebab_]
