@@ -1,4 +1,4 @@
-main: net.farugames.data.bungee.Main
+main: net.farugames.data.bungee.BungeeFaruData
 name: FaruGamesData
-version: 0.1.b1-SNAPSHOT
+version: ${project.version}
 authors: [3DX900, ChocoIG, SweetKebab_]

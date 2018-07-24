@@ -1,5 +1,5 @@
-main: net.farugames.data.spigot.Main
+main: net.farugames.data.spigot.SpigotFaruData
 name: FaruGamesData
-version: 0.1.b1-SNAPSHOT
+version: ${project.version}
 authors: [3DX900, ChocoIG, SweetKebab_]
 depends: [FaruGamesAPI]
