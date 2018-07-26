@@ -1,12 +1,14 @@
 package net.farugames.data.spigot;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import net.farugames.data.database.RedisDatabase;
-import net.farugames.data.database.SpigotDatabase;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.messaging.PluginMessageListener;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import net.farugames.data.database.RedisDatabase;
+import net.farugames.data.database.SpigotDatabase;
 
 public class SpigotFaruData extends JavaPlugin implements PluginMessageListener {
 	
